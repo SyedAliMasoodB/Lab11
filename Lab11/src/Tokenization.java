@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
-public class mainFrame extends javax.swing.JFrame {
+public class Tokenization extends javax.swing.JFrame {
 	
 	
 
-	public mainFrame() {
+	public Tokenization() {
 		initComponents();
 		addRoots();
 		rootsList.removeAll();
@@ -151,7 +151,7 @@ public class mainFrame extends javax.swing.JFrame {
 
 		java.awt.EventQueue.invokeLater(new Runnable() {
 			public void run() {
-				new mainFrame().setVisible(true);
+				new Tokenization().setVisible(true);
 			}
 		});
 	}
