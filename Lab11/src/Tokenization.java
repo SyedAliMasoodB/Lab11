@@ -7,7 +7,14 @@ import java.nio.charset.StandardCharsets;
 public class Tokenization extends javax.swing.JFrame {
 	
 	
+       private void tokenize(String verse){
+	String[] tokens = verse.split("[\\s.,!?]+");
+		for (int i = 0; i < tokens.length; ++i) 
+		{
+			tokensList.addItem(tokens[i]);
+		}
 
+	}
 	public Tokenization() {
 		initComponents();
 		addRoots();
